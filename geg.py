@@ -6,8 +6,8 @@ from dateutil.relativedelta import relativedelta
 import re
 
 print('Usage: <file_address>/<input_file_name> <file_address>/<output_file_name>')
-input_file = input()
-export_file = input()
+input_file = input('input_file_name: ')
+export_file = input('output_file_name: ')
 data = pd.read_csv(input_file, low_memory=False)
 
 data = data[[c for c
